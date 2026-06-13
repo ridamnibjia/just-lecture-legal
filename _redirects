@@ -1,0 +1,4 @@
+# Cloudflare Pages – pretty URL aliases
+/privacy          /privacy-policy      301
+/tos              /terms-of-service    301
+/terms            /terms-of-service    301
