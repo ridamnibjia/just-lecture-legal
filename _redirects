@@ -2,3 +2,5 @@
 /privacy          /privacy-policy      301
 /tos              /terms-of-service    301
 /terms            /terms-of-service    301
+/delete           /delete-account      301
+/data-deletion    /delete-account      301

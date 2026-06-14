@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Account – Just Lecture</title>
+  <meta name="description" content="Request permanent deletion of your Just Lecture account and all associated personal data.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    .steps li {
+      counter-increment: step;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin: 0 0 20px;
+      font-size: 15px;
+      color: var(--text-secondary);
+    }
+    .steps li::before {
+      content: counter(step);
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      background: var(--orange);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+    .delete-cta {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin: 8px 0 4px;
+      letter-spacing: 0.1px;
+    }
+    .delete-cta:hover {
+      background: var(--orange-dark);
+      text-decoration: none;
+      color: #fff;
+    }
+    .data-list {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+    }
+    .data-list ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .data-list li {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      margin: 6px 0;
+    }
+    .warning-card {
+      background: #FFF8F0;
+      border-left: 4px solid #E8580C;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .warning-card p {
+      margin: 0;
+      font-size: 14.5px;
+      color: #7A3010;
+    }
+    .email-template {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin: 16px 0;
+      font-family: monospace;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html"><img class="logo-img" src="logo.png" alt="Just Lecture"></a>
+      <a class="logo-name" href="index.html">Just Lecture</a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <span class="doc-label">Account</span>
+      <h1>Delete My Account</h1>
+      <p class="hero-meta">Permanently remove your account and all associated personal data from Just Lecture.</p>
+    </div>
+  </div>
+
+  <main>
+
+    <div class="warning-card">
+      <p><strong>This action is permanent and cannot be undone.</strong> Once your account is deleted, your profile, course preferences, and usage history are removed from our servers and cannot be recovered.</p>
+    </div>
+
+    <!-- What gets deleted -->
+    <section id="what-gets-deleted">
+      <h2>What Gets Deleted</h2>
+      <div class="data-list">
+        <ul>
+          <li>Your name, email address, and profile picture</li>
+          <li>Your phone number</li>
+          <li>Your course and category selection</li>
+          <li>Your watch history and last-played video position</li>
+          <li>Your authentication tokens (access &amp; refresh)</li>
+          <li>All account data held on our backend servers</li>
+        </ul>
+      </div>
+      <p style="margin-top:14px;">Data stored locally on your device (encrypted session cache) is automatically cleared when you log out. You can log out first from the app's Profile screen before submitting this request.</p>
+    </section>
+
+    <!-- How to request -->
+    <section id="how-to-request">
+      <h2>How to Request Deletion</h2>
+      <p>Since Just Lecture uses Google Sign-In, account deletion is handled by emailing us directly. We will process your request within <strong>30 days</strong> and send a confirmation.</p>
+
+      <ol class="steps">
+        <li>
+          <div>
+            <strong>Tap the button below</strong> to open a pre-filled deletion request email in your mail app. Make sure you send it from the same email address linked to your Just Lecture account.
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>Confirm your identity</strong> — include your registered email and name in the email so we can locate your account quickly.
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>Send the email.</strong> We will process the request within 30 days and reply to confirm deletion.
+          </div>
+        </li>
+      </ol>
+
+      <a class="delete-cta"
+         href="mailto:justlectureapp@gmail.com?subject=Account%20Deletion%20Request%20%E2%80%93%20Just%20Lecture&body=Hi%20Just%20Lecture%20Team%2C%0A%0AI%20would%20like%20to%20request%20permanent%20deletion%20of%20my%20account%20and%20all%20associated%20personal%20data.%0A%0AName%3A%20%5BYour%20name%5D%0ARegistered%20email%3A%20%5BThe%20email%20linked%20to%20your%20Just%20Lecture%20account%5D%0A%0APlease%20confirm%20once%20the%20deletion%20is%20complete.%0A%0AThank%20you.">
+        Send Deletion Request →
+      </a>
+
+      <p style="margin-top:12px;font-size:13.5px;color:var(--text-muted);">Or email us manually at <a href="mailto:justlectureapp@gmail.com">justlectureapp@gmail.com</a> with the subject line <strong>"Account Deletion Request"</strong>.</p>
+    </section>
+
+    <!-- Email template -->
+    <section id="email-template">
+      <h2>What to Include in Your Email</h2>
+      <p>Copy the template below if you prefer to write your own email:</p>
+      <div class="email-template">To: justlectureapp@gmail.com
+Subject: Account Deletion Request – Just Lecture
+
+Hi Just Lecture Team,
+
+I would like to request permanent deletion of my account
+and all associated personal data from Just Lecture.
+
+Name: [Your full name]
+Registered email: [Email linked to your Just Lecture account]
+
+Please confirm once the deletion is complete.
+
+Thank you.</div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline">
+      <h2>What Happens Next</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Timeline</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Within 3 days</strong></td>
+            <td>We acknowledge your request by email</td>
+          </tr>
+          <tr>
+            <td><strong>Within 30 days</strong></td>
+            <td>Your account and all personal data are permanently deleted from our servers</td>
+          </tr>
+          <tr>
+            <td><strong>After deletion</strong></td>
+            <td>You receive a confirmation email; your data cannot be recovered after this point</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>If you change your mind, you can create a new account at any time using Google Sign-In — though previous data cannot be restored after deletion.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Questions?</h2>
+      <p>If you have any questions about the deletion process, contact us at <a href="mailto:justlectureapp@gmail.com">justlectureapp@gmail.com</a>. We aim to respond within 3 business days.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 Just Lecture. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="delete-account.html">Delete Account</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
